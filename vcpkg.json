@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg-configuration.schema.json", 
+  "name": "sim",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "bitloop"
+  ],
+  "vcpkg-configuration": 
+  {
+    "default-registry": {
+      "kind": "builtin",
+      "baseline": "4002e3abc6d3e468c73d2d9777a7dd96af5dc224"
+    },
+
+    "registries": [
+      {
+        "kind":       "git",
+        "repository": "https://github.com/willmh93/bitloop-registry.git",
+        "baseline":   "244a9c6756492deb92198c03a0e0113575c79263",
+        "packages":   [ "bitloop" ]
+      }
+    ],
+
+    "overlay-triplets": [
+      "triplets"
+    ]
+  }
+}
